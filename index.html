@@ -1,0 +1,63 @@
+<html>
+
+<head>
+    <title>Website animation</title>
+    <meta rel="viewport" content="width=device-width, initail-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+    <div class="nav-bar">
+        <div class="nav-logo">
+            <img src="octopus_PNG6.png">
+        </div>
+        <div class="nav-links" id="mobileMenu">
+            <ul>
+                <a href="#">
+                    <li>FŐOLDAL</li>
+                </a>
+                <a href="#">
+                    <li>RECEPTEK</li>
+                </a>
+                <a href="#">
+                    <li>LIFESTYLE</li>
+                </a>
+                <a href="#">
+                    <li>RÓLUK</li>
+                </a>
+                <a href="#">
+                    <li>CONTACT</li>
+                </a>
+            </ul>
+        </div>
+        <img src="menu-icon.png" class="menu-icon" onclick="showMenu()">
+    </div>
+    <div class="hero">
+        <h1>RESPONSIVE DESIGN <br>MAKE WEBSITE BY YOURSELF.</h1>
+        <div class="btn">
+            <span></span><span></span><span></span><span></span>
+            <p>Hover me</p>
+
+        </div>
+    </div>
+    <script>
+        function showMenu() {
+            var toggle = document.getElementById("mobileMenu");
+            if (toggle.style.height == "0px") {
+                toggle.style.height = "200px";
+            } else {
+                toggle.style.height = "0px";
+            }
+
+        }
+    </script>
+
+
+
+
+</body>
+
+
+</html>
